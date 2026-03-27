@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Prajyoti Patil | Portfolio</title>
 
+  <!-- Icons -->
   <script src="https://kit.fontawesome.com/4b8b7c9f8a.js" crossorigin="anonymous"></script>
 
   <style>
@@ -19,11 +20,18 @@
       padding: 50px;
       background: linear-gradient(to right, #ec4899, #8b5cf6);
       color: white;
+      animation: fadeIn 1s ease-in;
     }
 
-    h1 { font-size: 36px; }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
 
-    h2 { color: #7c3aed; }
+    h2 {
+      color: #7c3aed;
+      margin-bottom: 10px;
+    }
 
     section {
       padding: 30px;
@@ -32,6 +40,7 @@
       background: white;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      animation: fadeUp 1s ease;
     }
 
     .card {
@@ -40,7 +49,7 @@
       margin: 12px 0;
       border-radius: 10px;
       border-left: 4px solid #8b5cf6;
-      transition: 0.3s;
+      transition: transform 0.3s ease;
     }
 
     .card:hover {
@@ -55,15 +64,27 @@
       border-radius: 6px;
       margin: 6px;
       text-decoration: none;
+      transition: 0.3s;
     }
 
     .btn:hover {
       background: #6d28d9;
+      transform: scale(1.05);
     }
 
     a {
       color: #7c3aed;
       text-decoration: none;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes fadeUp {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
     }
   </style>
 </head>
@@ -74,17 +95,34 @@
   <h1>Prajyoti Patil</h1>
   <p>Data Science Enthusiast | AI & ML</p>
 
-  <a href="https://github.com/Prajyoti04" class="btn">GitHub</a>
-  <a href="https://linkedin.com/in/prajyoti-patil-057355313" class="btn">LinkedIn</a>
+  <a href="https://github.com/Prajyoti04" class="btn">
+    <i class="fab fa-github"></i> GitHub
+  </a>
 
-  <!-- ✅ FIXED RESUME BUTTON -->
+  <a href="https://linkedin.com/in/prajyoti-patil-057355313" class="btn">
+    <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+
+  <!-- 👁 VIEW RESUME -->
+  <a href="https://github.com/Prajyoti04/Prajyoti-Portfolio/blob/main/Prajyoti-Patil.pdf" 
+     class="btn" target="_blank">
+     👁 View Resume
+  </a>
+
+  <!-- ⬇ DOWNLOAD RESUME -->
   <a href="https://raw.githubusercontent.com/Prajyoti04/Prajyoti-Portfolio/main/Prajyoti-Patil.pdf" 
-     class="btn" target="_blank">📄 Resume</a>
+     class="btn" target="_blank">
+     ⬇ Download Resume
+  </a>
+
 </header>
 
 <section>
   <h2>About Me</h2>
-  <p>I am a Data Science student passionate about building data-driven solutions using machine learning, NLP, and computer vision.</p>
+  <p>
+    I am a Data Science student passionate about building data-driven solutions using 
+    machine learning, NLP, and computer vision.
+  </p>
 </section>
 
 <section>
@@ -132,7 +170,9 @@
 <section>
   <h2>Contact</h2>
   <p>Email: prajyotipatil501@gmail.com</p>
-  <p>GitHub: <a href="https://github.com/Prajyoti04">github.com/Prajyoti04</a></p>
+  <p>
+    GitHub: <a href="https://github.com/Prajyoti04">github.com/Prajyoti04</a>
+  </p>
 </section>
 
 </body>
